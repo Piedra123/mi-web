@@ -1,3 +1,3 @@
 document.getElementById("btn").addEventListener("click", () => {
-  alert("¡Funciona! 🚀");
+  alert("Bienvenido a Carwash 🚗");
 });
