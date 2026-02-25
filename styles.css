@@ -1,12 +1,36 @@
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
 }
-.container {
-  padding: 40px;
+
+/* ENCABEZADO */
+.header {
+  background: linear-gradient(90deg, #2c3e50, #4b6584);
+  color: white;
+  text-align: center;
+  padding: 25px;
 }
-button {
-  padding: 10px 14px;
-  cursor: pointer;
+
+.header h1 {
+  margin: 0;
+}
+
+/* CARRUSEL */
+.carousel {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: none;
+}
+
+.active {
+  display: block;
 }
