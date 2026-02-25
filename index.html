@@ -17,46 +17,33 @@
 </body>
 </html> -->
 
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carwash</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="header">
-    <h1>Mi Página Web</h1>
-    <p>Bienvenido a mi sitio</p>
+    <h1>🚗 Carwash</h1>
+    <p>Servicio profesional de lavado de vehículos</p>
 </header>
 
 <div class="carousel">
-    <div class="slides">
-        <img src="img/img1.jpg" class="slide">
-        <img src="img/img2.jpg" class="slide">
-        <img src="img/img3.jpg" class="slide">
-        <img src="img/img4.jpg" class="slide">
-        <img src="img/img5.jpg" class="slide">
-        <img src="img/img6.jpg" class="slide">
-    </div>
+
+    <img src="img/img1.jpg" class="slide">
+    <img src="img/img2.jpg" class="slide">
+    <img src="img/img3.jpg" class="slide">
+    <img src="img/img4.jpg" class="slide">
+    <img src="img/img5.jpg" class="slide">
+    <img src="img/img6.jpg" class="slide">
+
 </div>
 
-<script>
-let index = 0;
-const slides = document.querySelectorAll(".slide");
-
-function showSlide() {
-    slides.forEach(slide => slide.style.display = "none");
-    index++;
-    if(index > slides.length) index = 1;
-    slides[index-1].style.display = "block";
-}
-
-setInterval(showSlide, 3000);
-showSlide();
-</script>
+<script src="app.js"></script>
 
 </body>
 </html>
