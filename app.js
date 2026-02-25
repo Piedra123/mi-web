@@ -1,18 +1,19 @@
-// document.getElementById("btn").addEventListener("click", () => {
-//   alert("Bienvenido a Carwash 🚗");
-// });
-
 let index = 0;
+
+const track = document.querySelector(".carousel-track");
+
 const slides = document.querySelectorAll(".slide");
 
-function showSlide() {
-  slides.forEach(slide => slide.classList.remove("active"));
+function moverCarrusel(){
 
-  slides[index].classList.add("active");
+    index++;
 
-  index++;
-  if (index >= slides.length) index = 0;
+    if(index >= slides.length){
+        index = 0;
+    }
+
+    track.style.transform = "translateX(-" + (index * 100) + "%)";
+
 }
 
-setInterval(showSlide, 3000);
-showSlide();
+setInterval(moverCarrusel, 5000);
